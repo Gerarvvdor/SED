@@ -4,9 +4,11 @@ import Product from "../components/product";
 function Catalog(){
     return(
         <>
-        <div class="container mt-5">
-            <div class="row d-flex justify-content-center g-1">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center ">
                 {/* Productos en base a la API */}
+                <Product/>
+                <Product/>
                 <Product/>
             </div>
         </div>
