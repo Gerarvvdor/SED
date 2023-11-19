@@ -3,6 +3,7 @@ import React from "react";
 function NewPublication(){
     return(
         <>
+        <h1>Publicar artículo</h1>
          <div class="main">
             <div class="container">
                 <svg id="exit" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,23 +29,32 @@ function NewPublication(){
                 <input type="text" minlength="16" maxlength="16" id="card" name="card" placeholder="$00.00"/>
                 <br/>
                 <label for="name">Descripción</label>
-                <input type="text" id="name" name="name" placeholder="Name"/>
+                <input type="text" id="name" name="name" placeholder="Descripción"/>
                 <br/>
                 <div class="exp-cvc">
-                <div class="expiration">
-                <label for="category">Categoría</label>
-                <select type="text" class="inputCard" name="category" id="category" placeholder="Categoria" required>
-                    <option value="Alquileres">Alquileres</option>
-                    <option value="Ventas">Ventas</option>
-                    <option value="Servicios">Servicios</option>
-                </select>
-                <br/>
-                </div>
-                <div class="security">
-                {/* <label for="cvc">CVC</label>
-                <input type="text" minlength="3" maxlength="4" id="cvc" name="cvc" placeholder="XXX" />
-                <br/> */}
-                </div>
+                    <div class="expiration">
+                        <label for="category" >Categoría</label>
+                        <select type="text" class="inputCard" name="category" id="category"  required>
+                            <option value="Alquileres">Alquileres</option>
+                            <option value="Ventas">Ventas</option>
+                            <option value="Servicios">Servicios</option>
+                        </select>
+                        <br/>
+                    </div>
+                    <div class="expiration">
+                        <label for="category">Estado</label>
+                        <select type="text" class="inputCard" name="category" id="category" placeholder="Categoria" required>
+                            <option value="Alquileres">Nuevo</option>
+                            <option value="Ventas">Usado</option>
+                            <option value="Servicios">Usado-Como nuevo</option>
+                        </select>
+                        <br/>
+                    </div>
+                    <div class="security">
+                    {/* <label for="cvc">CVC</label>
+                    <input type="text" minlength="3" maxlength="4" id="cvc" name="cvc" placeholder="XXX" />
+                    <br/> */}
+                    </div>
                 </div>
                 <div class="btn">
                 
@@ -61,3 +71,4 @@ function NewPublication(){
     );
 
 }
+export default NewPublication;
